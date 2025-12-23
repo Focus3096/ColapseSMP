@@ -1,0 +1,209 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(58, 46, 92, 0.85); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.header-center {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    height: 100vh;
+    background: url("./Знімок\ екрана\ 2025-12-23\ 183032.png") center / cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 18, 30, 0.45);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.hero-btn {
+    padding: 14px 32px;
+    background: #4a5cff; 
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #3f4ed6;
+    transform: translateY(-2px);
+}
+
+
+.content {
+    background: #22232a;
+    padding: 80px;
+    color: #e6e6e6;
+}
+
+.info-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.info-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.info-tg {
+    max-width: 800px;
+    font-size: 14px;
+    line-height: 1.6;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.tg-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.tg-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 420px;
+    padding: 26px 30px;
+    background: #4a5cff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.tg-button:hover {
+    background: #3f4ed6;
+    transform: translateY(-2px);
+}
+
+.tg-icon {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tg-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: #4a5cff;
+}
+
+.tg-arrow {
+    font-size: 28px;
+}
+
+
+.footer {
+    background: linear-gradient(180deg, #14141a, #1a1b21);
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b8b8c0;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-logo {
+    width: 38px;
+    height: 38px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.4;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-right h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-right a {
+    display: block;
+    color: #7f9cff;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: 0.2s;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-right a:hover {
+    color: #9fb4ff;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
