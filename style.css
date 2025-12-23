@@ -8,7 +8,17 @@ p,
 a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #1e1f23;
+}
 
 .header {
     position: fixed;
@@ -16,7 +26,7 @@ a {
     left: 0;
     width: 100%;
     height: 70px;
-    background: rgba(58, 46, 92, 0.85); 
+    background: rgba(58, 45, 88, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,71 +36,79 @@ a {
 .header-center {
     font-size: 26px;
     font-weight: 700;
-    color: #ffffff;
+    color: #f2f2f2;
     letter-spacing: 1px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+
 .hero {
-    height: 100vh;
-    background: url("./Знімок\ екрана\ 2025-12-23\ 183032.png") center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background: url("./Знімок екрана 2025-12-23 183032.png") center / cover no-repeat;
     background-attachment: fixed;
     position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0 20px;
 }
 
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(20, 18, 30, 0.45);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-content {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
-    z-index: 2;
 }
 
 .hero-content h1 {
-    font-size: 54px;
+    font-size: 64px;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 2px;
 }
 
+
 .hero-btn {
     padding: 14px 32px;
-    background: #4a5cff; 
+    background: #5b6bff;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 12px;
+    border-radius: 14px;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .hero-btn:hover {
-    background: #3f4ed6;
+    background: #4a57d6;
     transform: translateY(-2px);
 }
 
 
 .content {
-    background: #22232a;
-    padding: 80px;
-    color: #e6e6e6;
+    background: #24252b;
+    padding: 80px 40px;
+    color: #eaeaea;
 }
 
-.info-title {
+.info-title,
+.tg-title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -100,33 +118,18 @@ html {
 .info-text {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
-.info-tg {
-    max-width: 800px;
-    font-size: 14px;
-    line-height: 1.6;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.tg-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
 
 .tg-button {
+    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 20px;
     width: 420px;
     padding: 26px 30px;
-    background: #4a5cff;
+    background: #5b6bff;
     color: #fff;
     text-decoration: none;
     border-radius: 18px;
@@ -136,7 +139,7 @@ html {
 }
 
 .tg-button:hover {
-    background: #3f4ed6;
+    background: #4a57d6;
     transform: translateY(-2px);
 }
 
@@ -153,7 +156,7 @@ html {
 .tg-icon svg {
     width: 26px;
     height: 26px;
-    fill: #4a5cff;
+    fill: #4aa3ff;
 }
 
 .tg-arrow {
@@ -162,12 +165,12 @@ html {
 
 
 .footer {
-    background: linear-gradient(180deg, #14141a, #1a1b21);
-    padding: 40px 80px;
+    background: linear-gradient(180deg, #15151a, #1c1c22);
+    padding: 40px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #b8b8c0;
+    color: #bfbfbf;
 }
 
 .footer-left {
@@ -184,26 +187,60 @@ html {
 .footer-text {
     font-size: 14px;
     line-height: 1.4;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer-right h4 {
     margin-bottom: 10px;
     font-size: 16px;
     color: #ffffff;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer-right a {
     display: block;
-    color: #7f9cff;
+    color: #7ab0ff;
     text-decoration: none;
     margin-bottom: 6px;
     transition: 0.2s;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer-right a:hover {
-    color: #9fb4ff;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a5caff;
+}
+
+
+
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .tg-button {
+        width: 100%;
+        max-width: 320px;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 260px;
+    }
 }
